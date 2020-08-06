@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import storefront from '../images/Shop2.jpg'
@@ -20,7 +21,7 @@ export default class Photos extends Component {
   render(){
   return (
     <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-    <section class="site-hero" style={{ backgroundImage: `url(${storefront})`}} data-stellar-background-ratio="0.5">
+    <div class="site-hero" style={ {backgroundImage: `url(${storefront})`}} data-stellar-background-ratio="0.5">
 		  <div class="container">
 			   <div class="row intro-text align-items-flex-start justify-content-center" style={{ marginTop: "100px"}}>
 				     <div class="col-md-10 text-left pt-10">
@@ -28,10 +29,7 @@ export default class Photos extends Component {
 				     </div>
 			   </div>
 	    </div>
-    </section>
-
-
-
+    </div>
 
     </body>
 

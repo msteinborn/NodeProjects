@@ -1,10 +1,11 @@
 body {
   background: #fff;
   color: rgba(255, 255, 255, 0.4);
-  background: #222;
+  background: #fff;
   line-height: 1.7;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 300;
+background-color:#DDD }
 
 .p1-gradient-bg, .thumb .overlay-bg {
   background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
@@ -142,7 +143,7 @@ a {
       color: #bac964 !important; }
 
 .site-hero {
-  background-color: #ccc;
+  background-color: #FFF;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -159,7 +160,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(45, 45, 45, 0.5); }
   .site-hero h1 {
     font-weight: 200;
     margin-bottom: 20px;

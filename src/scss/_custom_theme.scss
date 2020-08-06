@@ -1,0 +1,10 @@
+
+$theme-colors: (
+  "primary": #111,
+  "yellow": yellow,
+  "lighter": #FFF
+);
+
+
+/* -------end customization-------- *//* finally, import Bootstrap to set the changes! */
+@import "bootstrap";

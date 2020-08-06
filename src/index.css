@@ -19,10 +19,12 @@ code {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden; }
-  .site-hero, .site-hero .row {
+
+.site-hero, .site-hero .row {
     height: 100vh;
     min-height: 800px; }
-  .site-hero:before {
+
+.site-hero:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -31,21 +33,25 @@ code {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); }
-  .site-hero h1 {
+
+.site-hero h1 {
     font-weight: 200;
     margin-bottom: 20px;
     display: block; }
-    .site-hero h1 strong {
+.site-hero h1 strong {
       font-weight: 800; }
     @media (min-width: 768px) {
       .site-hero h1 {
         font-size: 70px; } }
-  .site-hero h1, .site-hero .lead {
+
+.site-hero h1, .site-hero .lead {
     font-weight: 200;
     color: #fff; }
-  .site-hero .lead {
+
+.site-hero .lead {
     line-height: 2; }
-  .site-hero .site-subheading {
+
+.site-hero .site-subheading {
     max-width: 640px;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.5); }
