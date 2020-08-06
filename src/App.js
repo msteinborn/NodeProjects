@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Photos from "./components/photos.component";
 import Jumbo from "./components/jumbo.component";
 import About from "./components/about.component";
+import Portfolios from "./components/portfolio.component";
 
 
 
@@ -26,7 +27,7 @@ class App extends Component {
                     <Link to="/" class="nav-link">Home </Link>
                   </li>
                   <li class="nav-item">
-                    <Link to="/about" className="nav-link">About</Link>
+                    <Link to="/portfolio" className="nav-link">Portfolio</Link>
                   </li>
                   <li class="nav-item">
                     <Link to="/photos" className="nav-link">Photos</Link>
@@ -43,7 +44,7 @@ class App extends Component {
 
         <Route  path="/photos" exact component={Photos} />
         <Route  path = "/" exact component={Jumbo} />
-        <Route  path = "/about" exact component={About} />
+        <Route  path = "/portfolio" exact component={Portfolios} />
 
       </div>
     </Router>
