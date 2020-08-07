@@ -11,6 +11,9 @@ import Portfolios from "./components/portfolio.component";
 import './style.css'
 
 
+
+
+
 class App extends Component {
   render(){
   return (
@@ -46,7 +49,7 @@ class App extends Component {
 
 
         <Route  path="/photos" exact component={Photos} />
-        <Route  path = "/" exact component={Jumbo} />
+        <Route  path = "/" exact component={() => <Jumbo name={`Matt`} />} />
         <Route  path = "/portfolio" exact component={Portfolios} />
 
       </div>
