@@ -6,7 +6,6 @@ import "./scss/_custom_theme.scss"
 
 import Photos from "./components/photos.component";
 import Jumbo from "./components/jumbo.component";
-import About from "./components/about.component";
 import Portfolios from "./components/portfolio.component";
 import './style.css'
 
@@ -20,24 +19,24 @@ class App extends Component {
     <Router>
       <div id="colorlib-page">
           <div id="container-fluid">
-      		<div id="colorlib-main" class ='bg-light'>
-            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary sticky-top vh" style={{height: 80}}>
-              <Link to="/" class="navbar-brand" href="#"><h2 class="font-weight-bold" >Matt</h2></Link>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+      		<div id="colorlib-main" className ='bg-light'>
+            <nav className="navbar navbar-expand-lg navbar navbar-dark bg-primary sticky-top vh" style={{height: 70}}>
+              <Link to="/" className="navbar-brand" href="#"><h2 className="font-weight-bold" >Matt</h2></Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
                 </button>
-              <div class="collapse navbar-collapse t  justify-content-end" style={{marginRight: 100}} id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="navbar-item">
-                    <Link to="/" class="nav-link "><h5><strong>Home</strong></h5> </Link>
+              <div className="collapse navbar-collapse t  justify-content-end" style={{marginRight: 100}} id="navbarNav">
+                <ul className="navbar-nav">
+                  <li className="navbar-item">
+                    <Link to="/" className="nav-link "><h5><strong>Home</strong></h5> </Link>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <Link to="/portfolio" className="nav-link"><h5><strong>Portfolio</strong></h5></Link>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <Link to="/photos" className="nav-link"><h5><strong>Photos</strong></h5></Link>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                   </li>
                 </ul>
               </div>

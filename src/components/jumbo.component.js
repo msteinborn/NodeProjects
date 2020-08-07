@@ -11,22 +11,23 @@ export default class Jumbo extends Component {
   }
 
   render(){
+    let width =window.innerWidth
   return (
     <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-    <section class="site-hero" style={{ backgroundImage: `url(${matt})`}}  data-stellar-background-ratio="0.5">
-		  <div class="container">
-			   <div class="row intro-text align-items-flex-start justify-content-center">
-				     <div class="col-md-10 text-left pt-5">
-					        <h1 class=" site-animate">Hi, I'm <strong class="d-block text-light ">{this.props.name}</strong> </h1>
-				     </div>
-			   </div>
-	    </div>
-    </section>
+      <section className="site-hero" style={{ backgroundImage: `url(${matt})`}}  data-stellar-background-ratio="0.5">
+		    <div className="container" style= {{marginRight: width*.5}}>
+			     <div className="row intro-text align-items-flex-start justify-content-center">
+				       <div className="col-md-10 text-left pt-5">
+					        <h1 className=" site-animate">Hi, I'm  <strong className="d-block text-light ">{this.props.name} 👋 </strong> </h1>
+				              </div>
+			      </div>
+	       </div>
+       </section>
 
 
 
 
-          <img src={gradient} class="img-fluid fixed-bottom" alt="Responsive image " />
+          <img src={gradient} className="img-fluid fixed-bottom" style= {{width: width }} alt="Responsive" />
     </body>
   );
   }

@@ -2,46 +2,126 @@ import React, {Component} from 'react';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../style.css'
-import { CSSTransition } from 'react-transition-group'; // ES6
 import PortfolioItem from './portfoliocomps/portitem.component.js'
+import Project from './portfoliocomps/projs.component.js'
+
+var activeH = "nav"
+var activeS = "nav"
+var activeA = "active"
 
 
 export default class Portfolios extends Component {
+
+
+
   constructor(props) {
   super(props);
-    this.state = {isToggle: false};
-    this.handleClick = this.handleClick.bind(this); }
+  this.state = {isToggleH: false,
+                isToggleS: false,
+                isToggleA: true,
+                project: 'null'
+              };
+  this.handleClickH = this.handleClickH.bind(this);
+  this.handleClickS = this.handleClickS.bind(this);
+  this.handleClickA = this.handleClickA.bind(this);
 
-
-  handleClick() {
-    this.setState( state =>({
-      isToggle: !state.isToggle
-    }));
-    console.log(this.state.isToggle)
   }
+
+
+  handleClickH() {
+    this.setState({
+      isToggleH: true,
+      isToggleS: false,
+      isToggleA: false
+    });
+    activeH = "active";
+    activeS = "nav";
+    activeA = "nav";
+  }
+
+  handleClickS() {
+    this.setState({
+      isToggleH: false,
+      isToggleS: true,
+      isToggleA: false
+    })
+    activeS = "active";
+    activeH = "nav";
+    activeA = "nav";
+  }
+
+  handleClickA() {
+    this.setState({
+      isToggleH: false,
+      isToggleS: false,
+      isToggleA: true
+    })
+    activeS = "nav";
+    activeH = "nav";
+    activeA = "active";
+  }
+
+
+
   render(){
 
+  var currProj = this.state.project;
+    console.log(currProj);
   return (
-      <section class="site-section bg-primary" id="section-portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="section-heading text-center col-md-12">
-            <h2 class="mx-auto text-light">Some Projects</h2>
+    <div>
+      <section className="site-section bg-primary" id="section-portfolio">
+      <div className="container">
+        <div className="row">
+          <div className="section-heading text-center col-md-12">
+            <h2 className="mx-auto text-light">Some Projects</h2>
           </div>
         </div>
-        <div class="filters">
+        <div className="filters">
           <ul>
-            <li class="active" data-filter="*">All</li>
-            <li class = "nav" data-filter=".hardware" onClick = {this.handleClick}>Hardware</li>
-            <li class = "nav" data-filter=".software">Software</li>
+            <li className={activeA}  onClick = {this.handleClickA}>All</li>
+            <li className = {activeH}  onClick = {this.handleClickH}>Hardware</li>
+            <li className = {activeS} onClick = {this.handleClickS}>Software</li>
           </ul>
         </div>
 
         </div>
+        <div className = "row" style = {{marginLeft: '25%'}}>
+        <div className = "col">
+          {(this.state.isToggleH || this.state.isToggleA) &&
+            <div>
+            <div className= "button" onClick = {() => this.setState({project : "Embedded Systems"})} style = {{cursor:'pointer'}}>
+             <PortfolioItem title="Embedded Project"/>
+             </div>
 
-        {this.state.isToggle && <PortfolioItem title="Embedded Project" /> }
+             <div className= "button" onClick = {() => this.setState({project : "Brainwave Detection"})} style = {{cursor:'pointer'}}>
+             <PortfolioItem title="Brain Project"/>
+             </div>
+
+             </div>
+             }
+          </div>
+          <div className = "col">
+
+          {(this.state.isToggleS || this.state.isToggleA) &&
+            <div>
+               <div className= "button" onClick = {() => this.setState({project : "NBA Data Analysis"})} style = {{cursor:'pointer'}}>
+                <PortfolioItem title="NBA Data Analysis" >
+                </PortfolioItem>
+                </div>
+                <div className= "button" onClick = {() => this.setState({project : "Machine Learning Object Detection"})} style = {{cursor:'pointer'}}>
+                <PortfolioItem title="ML for Object Detection"/>
+                </div>
+
+              </div>
+                }
+             </div>
+
+             </div>
+
       </section>
 
+      <Project project= {currProj}> </Project>
+      </div>
     );
     }
     }
