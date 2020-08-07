@@ -1,3 +1,13 @@
+## Matt's Personal Website
+
+Using an amalgam of several style guides, as well as bootstrap. This website was made mostly to test out my ability to learn and use react.js.
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
