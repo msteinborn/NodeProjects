@@ -175,6 +175,12 @@ a {
     color: #fff; }
   .site-hero .lead {
     line-height: 2; }
+
+  .site-hero h2 {
+    font-weight: 200;
+    margin-bottom: 20px;
+    display: block; }
+    
   .site-hero .site-subheading {
     max-width: 640px;
     margin: 0 auto;
