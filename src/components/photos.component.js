@@ -23,8 +23,8 @@ export default class Photos extends Component {
     <div class="site-hero" style={ {backgroundImage: `url(${storefront})`}} data-stellar-background-ratio="0.5">
 		  <div class="container">
 			   <div class="row intro-text align-items-flex-start justify-content-center" style={{ marginTop: "100px"}}>
-				     <div class="col-md-10 text-left pt-10  text-grey">
-					        <h1 class="site-heading site-animate">Enjoy Some <strong class="d-block">Photography</strong> </h1>
+				     <div class="col-md-10 text-left pt-10">
+					         <h1 className=" site-animate text-grey">Enjoy some,  <strong className="d-block text-grey ">Photography  </strong> </h1>
 				     </div>
 			   </div>
 	    </div>

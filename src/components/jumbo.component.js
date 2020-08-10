@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { MDBIcon, MDBContainer, MDBBtn } from 'mdbreact';
 import "bootstrap/dist/css/bootstrap.min.css";
 import gradient from '../images/gradient.png'
 import matt from '../images/matt.jpg'
@@ -16,18 +17,36 @@ export default class Jumbo extends Component {
   return (
     <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
       <section className="site-hero" style={{ backgroundImage: `url(${matt})`}}  data-stellar-background-ratio="0.5">
-		    <div className="container" style= {{marginRight: width*.3 , marginTop: height*.02}}>
+		    <div className="container" style= {{marginRight: width*.3 , marginTop: height*.1}}>
 			     <div className="row intro-text align-items-flex-start justify-content-center">
-				       <div className="col-md-10 text-left pt-5">
-					        <h1 className=" site-animate text-green">Hi, I'm  <strong className="d-block text-green ">{this.props.name}  </strong> </h1>
+				       <div className="col-md-10 text-left pt-15">
+					        <h1 className=" site-animate text-green">Hi, I'm </h1> <h1 className=" site-animate text-green" style= {{ fontWeight: 800}}>   {this.props.name}  </h1>
 				              </div>
 			      </div>
 	       </div>
        </section>
 
 
+        <div>
+          <section className="site-section bg-primary" id="section-portfolio">
+          <div className="container">
+          <div className = " text-center col-md-12" style={{marginTop:-90}}>
+            <MDBContainer>
+              <MDBBtn size="lg" tag='a' social="li" className="bg-green">
+                    <MDBIcon fab icon="linkedin" />
+              </MDBBtn>
+
+              <MDBBtn size="lg" tag="a" floating social="git" className="bg-green">
+                <MDBIcon fab icon="github" />
+              </MDBBtn>
 
 
+
+            </MDBContainer>
+          </div>
+          </div>
+          </section>
+        </div>
 
     </body>
   );
