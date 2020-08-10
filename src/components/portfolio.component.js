@@ -69,7 +69,7 @@ export default class Portfolios extends Component {
     console.log(currProj);
   return (
     <div>
-      <section className="site-section bg-primary" id="section-portfolio">
+      <section className="site-section bg-green" id="section-portfolio">
       <div className="container">
         <div className="row">
           <div className="section-heading text-center col-md-12">

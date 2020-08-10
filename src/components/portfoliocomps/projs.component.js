@@ -18,8 +18,8 @@ export default class Project extends Component {
     return(
       <div>
       {(this.props.project !== 'null' ) &&
-        <section className = "site-section bg-secondary rounded">
-          <div className="jumbotron jumbotron-fluid bg-secondary">
+        <section className = "site-section bg-primary rounded">
+          <div className="jumbotron jumbotron-fluid bg-primary">
             <div className="container">
               <h1 className="display-4">{this.props.project}</h1>
               <p className="lead text-light">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
