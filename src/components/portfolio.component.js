@@ -119,8 +119,9 @@ export default class Portfolios extends Component {
              </div>
 
       </section>
-
-      <Project project= {currProj}> </Project>
+      <section className = "site-section bg-green rounded">
+        <Project project= {currProj}> </Project>
+      </section>
       </div>
     );
     }
