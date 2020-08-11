@@ -29,14 +29,14 @@ class App extends Component {
           <div id="container-fluid">
       		<div id="colorlib-main">
             <nav className="navbar navbar-expand-lg bg-light sticky-top" style={{height: 70}}>
-              <Link to="/" className="navbar-brand" href="#"><h2 className="font-weight-bold text-primary pt-15" >Matthew Steinborn</h2></Link>
+              <Link to="/Portfolio" className="navbar-brand" href="#"><h2 className="font-weight-bold text-primary pt-15" >Matthew Steinborn</h2></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
               <div className="collapse navbar-collapse t  justify-content-end" style={{marginRight: 100}} id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="navbar-item">
-                    <Link to="/" className="nav-link "><h5><strong className = "text-green">Home</strong></h5> </Link>
+                    <Link to="/Portfolio" className="nav-link "><h5><strong className = "text-green">Home</strong></h5> </Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/portfolioitems" className="nav-link"><h5><strong className = "text-green">Portfolio</strong></h5></Link>
@@ -55,7 +55,7 @@ class App extends Component {
 
 
         <Route  path="/photos" exact component={Photos} />
-        <Route  path = "/" exact component={() => <Jumbo name={`Matthew Steinborn`} />} />
+        <Route  path = "/Portfolio" exact component={() => <Jumbo name={`Matthew Steinborn`} />} />
         <Route  path = "/portfolioitems" exact component={Portfolios} />
         <Route  path = "/resume" exact component={Resume} />
 
