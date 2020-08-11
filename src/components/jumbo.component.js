@@ -23,16 +23,16 @@ export default class Jumbo extends Component {
 				       <div className="col-md-10 text-left pt-15">
 					        <h1 className=" site-animate text-primary">Hi, I'm </h1> <h1 className=" site-animate text-primary" style= {{ fontWeight: 800}}>   {this.props.name}  </h1>
 				              </div>
-                         <h1> TESTING </h1>
+
 
 			      </div>
 	       </div>
+
        </section>
-
-
         <div>
           <section className="site-section bg-primary" id="section-portfolio">
           <div className="container">
+          <h3 style={{marginTop:-500}}> Testing </h3>
           <div className = " text-center col-md-12" style={{marginTop:-90}}>
             <MDBContainer>
               <MDBBtn size="lg" tag='a' floating social="li" className="bg-green"  href="https://www.linkedin.com/in/matthewsteinborn/"  target="_blank">
