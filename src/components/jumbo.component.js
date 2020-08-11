@@ -23,6 +23,10 @@ export default class Jumbo extends Component {
 				       <div className="col-md-10 text-left pt-15">
 					        <h1 className=" site-animate text-primary">Hi, I'm </h1> <h1 className=" site-animate text-primary" style= {{ fontWeight: 800}}>   {this.props.name}  </h1>
 				              </div>
+                       <div className="col-md-10 text-center pt-10">
+                       <h3 className= "text-grey" style={{marginTop:-1*height*0.1}}>Trained in Electrical Engineering, I have a soft spot for all things 0 and 1.    </h3>
+                       <h2 style={{marginTop:height*0.1, marginLeft: width* 0.05}}> Check out some of my projects to see what I'm into, and feel free to connect! </h2>
+                       </div>
 
 
 			      </div>
@@ -32,15 +36,15 @@ export default class Jumbo extends Component {
         <div>
           <section className="site-section bg-primary" id="section-portfolio">
           <div className="container">
-          <h3 style={{marginTop:-500}}> Testing </h3>
-          <div className = " text-center col-md-12" style={{marginTop:-90}}>
+          <div className = " text-center col-md-12" style={{marginTop:-1 * height *0.1}}>
+          <h1> Let's Connect! </h1>
             <MDBContainer>
-              <MDBBtn size="lg" tag='a' floating social="li" className="bg-green"  href="https://www.linkedin.com/in/matthewsteinborn/"  target="_blank">
-                    <MDBIcon fab icon="linkedin" />
+              <MDBBtn size="lg" tag='a'  className="bg-green"style={{width:250,height:50, position:'relative', right :50}}  href="https://www.linkedin.com/in/matthewsteinborn/" >
+                    <MDBIcon fab icon="linkedin-in" size ='2x' style={{position:'relative', bottom: 5}}/>
               </MDBBtn>
 
-              <MDBBtn size="lg" tag="a" floating social="git" className="bg-green"  href="https://github.com/msteinborn"  target="_blank">
-                <MDBIcon fab icon="github" />
+              <MDBBtn size="lg" tag="a" floating style={{width:250, height:50, position:'relative', left :50}} className="bg-green"  href="https://github.com/msteinborn"  >
+                <MDBIcon fab icon="github" size = '2x' style={{position:'relative', bottom: 5}} />
               </MDBBtn>
 
 

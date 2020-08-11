@@ -19,7 +19,8 @@ export default class Portfolios extends Component {
   this.state = {isToggleH: false,
                 isToggleS: false,
                 isToggleA: true,
-                project: 'null'
+                project: 'null',
+                desc: ''
               };
   this.handleClickH = this.handleClickH.bind(this);
   this.handleClickS = this.handleClickS.bind(this);
@@ -66,7 +67,7 @@ export default class Portfolios extends Component {
   render(){
 
   var currProj = this.state.project;
-    console.log(currProj);
+  var desc = this.state.desc;
   return (
     <div>
       <section className="site-section bg-green" id="section-portfolio">
@@ -89,12 +90,15 @@ export default class Portfolios extends Component {
         <div className = "col">
           {(this.state.isToggleH || this.state.isToggleA) &&
             <div>
-            <div className= "button" onClick = {() => this.setState({project : "Embedded Systems"})} style = {{cursor:'pointer'}}>
+            <div className= "button" onClick = {() => this.setState({project : "Embedded Systems", desc: "C and Microcontroller"})} style = {{cursor:'pointer'}}>
              <PortfolioItem title="Embedded Project"/>
              </div>
 
-             <div className= "button" onClick = {() => this.setState({project : "Brainwave Detection"})} style = {{cursor:'pointer'}}>
-             <PortfolioItem title="Brain Project"/>
+             <div className= "button" onClick = {() => this.setState({project : "Brainwave Detection", desc: "Analog board design"})} style = {{cursor:'pointer'}}>
+             <PortfolioItem title="Brainwave Detection "/>
+             </div>
+             <div className= "button" onClick = {() => this.setState({project : "Hardware Acceleration", desc: "FPGA with ARM Processor"})} style = {{cursor:'pointer'}}>
+             <PortfolioItem title="Hardware Acceleration"/>
              </div>
 
              </div>
@@ -104,11 +108,11 @@ export default class Portfolios extends Component {
 
           {(this.state.isToggleS || this.state.isToggleA) &&
             <div>
-               <div className= "button" onClick = {() => this.setState({project : "NBA Data Analysis"})} style = {{cursor:'pointer'}}>
+               <div className= "button" onClick = {() => this.setState({project : "NBA Data Analysis", desc: 'Python data analysis'})} style = {{cursor:'pointer'}}>
                 <PortfolioItem title="NBA Data Analysis" >
                 </PortfolioItem>
                 </div>
-                <div className= "button" onClick = {() => this.setState({project : "Machine Learning Object Detection"})} style = {{cursor:'pointer'}}>
+                <div className= "button" onClick = {() => this.setState({project : "Machine Learning Object Detection", desc:"Neural Nets in Python"})} style = {{cursor:'pointer'}}>
                 <PortfolioItem title="ML for Object Detection"/>
                 </div>
 
@@ -120,7 +124,7 @@ export default class Portfolios extends Component {
 
       </section>
       <section className = "site-section bg-green rounded">
-        <Project project= {currProj}> </Project>
+        <Project project= {currProj} desc={desc}> </Project>
       </section>
       </div>
     );

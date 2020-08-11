@@ -44,9 +44,7 @@ class App extends Component {
                   <li className="nav-item">
                     <Link to="/resume" className="nav-link"><h5><strong className = "text-green">Resume</strong></h5></Link>
                   </li>
-                  <li className="nav-item">
-                    <Link to="/photos" className="nav-link"><h5><strong className = "text-green">Photos</strong></h5></Link>
-                  </li>
+                  
                 </ul>
               </div>
             </nav>

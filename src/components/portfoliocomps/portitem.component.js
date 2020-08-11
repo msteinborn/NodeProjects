@@ -24,7 +24,7 @@ render(){
         </div>
         <div className="p-inner">
           <h4>{this.props.title}</h4>
-          <div className="cat">Code</div>
+          <div className="cat">{this.props.desc}</div>
         </div>
       </div>
     </div>
