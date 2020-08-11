@@ -39,11 +39,11 @@ export default class Jumbo extends Component {
           <div className = " text-center col-md-12" style={{marginTop:-1 * height *0.1}}>
           <h1> Let's Connect! </h1>
             <MDBContainer>
-              <MDBBtn size="lg" tag='a'  className="bg-green"style={{width:250,height:50, position:'relative', right :50}}  href="https://www.linkedin.com/in/matthewsteinborn/" >
+              <MDBBtn size="lg" tag='a'  className="bg-green"style={{width:250,height:50, position:'relative', right :50}}  href="https://www.linkedin.com/in/matthewsteinborn/" target="_blank">
                     <MDBIcon fab icon="linkedin-in" size ='2x' style={{position:'relative', bottom: 5}}/>
               </MDBBtn>
 
-              <MDBBtn size="lg" tag="a" floating style={{width:250, height:50, position:'relative', left :50}} className="bg-green"  href="https://github.com/msteinborn"  >
+              <MDBBtn size="lg" tag="a" floating style={{width:250, height:50, position:'relative', left :50}} className="bg-green"  href="https://github.com/msteinborn"target="_blank"  >
                 <MDBIcon fab icon="github" size = '2x' style={{position:'relative', bottom: 5}} />
               </MDBBtn>
 

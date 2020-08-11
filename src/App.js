@@ -39,12 +39,12 @@ class App extends Component {
                     <Link to="/" className="nav-link "><h5><strong className = "text-green">Home</strong></h5> </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/portfolio" className="nav-link"><h5><strong className = "text-green">Portfolio</strong></h5></Link>
+                    <Link to="/portfolioitems" className="nav-link"><h5><strong className = "text-green">Portfolio</strong></h5></Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/resume" className="nav-link"><h5><strong className = "text-green">Resume</strong></h5></Link>
                   </li>
-                  
+
                 </ul>
               </div>
             </nav>
@@ -56,7 +56,7 @@ class App extends Component {
 
         <Route  path="/photos" exact component={Photos} />
         <Route  path = "/" exact component={() => <Jumbo name={`Matthew Steinborn`} />} />
-        <Route  path = "/portfolio" exact component={Portfolios} />
+        <Route  path = "/portfolioitems" exact component={Portfolios} />
         <Route  path = "/resume" exact component={Resume} />
 
       </div>
